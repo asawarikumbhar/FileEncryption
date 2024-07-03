@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./static/stylesheet.css">
+    <title>FileSecurity</title>
+</head>
+
+<body>
+<form method="POST" enctype="multipart/form-data">
+  <div class="maincontainer">
+
+    <video class="bgvideo" autoplay muted loop>
+      <source src="/static/images/bgvideo.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+      <center>
+        <h1>File Encryption and Decryption</h1>
+      </center>
+      <center>
+        <h3>Encrypt and Decrypt your Files and secure your data</h3>
+      </center>
+      <div class="mainbox">
+        <div class="imgbox">
+          <img class="logo1" src="/static/images/encryptlogo.png" alt="encryptlogoimage">
+          <img class="logo3" src="/static/images/arr.png" alt="arrowimage">
+          <img class="logo2" src="/static/images/decryptlog.png" alt="decryptlogoimage">
+        </div>
+        <div class="btndiv">
+
+            <input type="file" name="file" id="file">
+            <label for="operation">Choose an operation:</label>
+            <select name="operation" id="operation">
+                <option value="encrypt">Encrypt</option>
+                <option value="decrypt">Decrypt</option>
+            </select>
+            <button type="submit" id="submit">Perform Operation</button> 
+         
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+</body>
+</html>
